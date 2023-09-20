@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+  <ion-img src="../../assets/background2.png" alt="" id="img"></ion-img>
+  <ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="clipboard-outline" (click)="goToregistrar()"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Registrar
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="camera-outline" (click)="goToCamera()"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Camara
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="albums-outline" (click)="goToAlbums()"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Pokemon
+        </ion-card-content>
+      </ion-card>
+      <ion-card >
+        <ion-card-header>
+          <ion-card-title><ion-icon name="musical-notes-outline" (click)="goToMusic()"></ion-icon></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Musica
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-content>

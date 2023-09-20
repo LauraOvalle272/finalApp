@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+
+  <ion-img src="../../assets/background2.png" alt="" id="img"></ion-img>
+
+
+  <ion-card>
+    <img src="{{imageSource}}" />
+  </ion-card>
+  
+  
+  
+  <div>
+    <ion-card>
+      <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-input [(ngModel)]="title" label="Title"></ion-input>
+        </ion-item>
+  
+      </ion-list>
+      <br>
+      <div>
+        <div id="row">
+          <ion-button expand="full" color="translucent" (click)="saveData()">Post</ion-button>
+          <ion-button expand="full" color="translucent" (click)="discardPhoto()">Delete</ion-button>
+      </div>
+      </div>
+      </ion-card-content>
+    </ion-card>
+    </div>
+</ion-content>
+
+<ion-tab-bar  class="fixed-bottom">
+  
+</ion-tab-bar>
+
+<div class="circle">
+  <ion-icon name="camera-outline" (click)="takePicture()"></ion-icon>
+</div>

@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+  <ion-img src="../../assets/background.png" alt="" id="img"></ion-img>
+
+  <div class="login">
+
+  <ion-card>
+
+    <ion-header color="translucent">
+      <ion-toolbar color="translucent">
+      <h2 class="login-titulo">LOGIN</h2>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-card-content>
+      <ion-list>
+        <ion-item fill="outline">
+          <ion-label></ion-label>
+          <ion-input [(ngModel)]="userName" placeholder="User"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item fill="outline">
+          <ion-label></ion-label>
+          <ion-input [(ngModel)]="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button expand="full"  color="translucent" (click)="Ingresar()">Ingresar</ion-button>
+        <br>
+        <div>{{errormessage}}</div>
+        <div>{{usermessage}}</div>
+        <br>
+        <div class="register">Don´t you have an account?
+          <div class="register2" (click)="goToRegister()">
+          Register here 
+          </div>
+        </div>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+  </div>
+  
+
+
+</ion-content>

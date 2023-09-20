@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+  <img src="../../assets/background.png" class="img">
+
+  <div class="register">
+    <ion-card>
+
+      <ion-header color="translucent">
+        <ion-toolbar color="translucent">
+        <h2 class="login-titulo">SIGN UP</h2>
+        </ion-toolbar>
+      </ion-header>
+      
+      <ion-card-content>
+        <ion-list>
+          <ion-item fill="outline">
+            <ion-label></ion-label>
+            <ion-input  placeholder="UserName" [(ngModel)]="userName"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item fill="outline">
+            <ion-label></ion-label>
+            <ion-input placeholder="Password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <br>
+          <ion-item fill="outline">
+            <ion-label></ion-label>
+            <ion-input placeholder=" Repeat Password" [(ngModel)]="repeatPassword" ></ion-input>
+          </ion-item>
+          <br>
+          <div class="noCoinciden">{{passwordmessage}}</div>
+          <div class="void">{{errormessage}}</div>
+          <br>
+          <ion-button expand="full" color="translucent" (click)="validacion()">Sign up</ion-button>
+          
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+

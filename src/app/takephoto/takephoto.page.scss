@@ -1,0 +1,37 @@
+#img{
+    position: absolute;
+    width: 100%;
+}
+
+ion-tab-bar{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EA9010;
+}
+
+.circle {
+    width: 60px; /* Ancho del círculo */
+    height: 60px; /* Altura del círculo */
+    background-color: #EA9010;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: 2px solid white;
+    margin: 0 auto; /* Centra horizontalmente el círculo en la ion-tab-bar */
+    bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+}
+
+.circle ion-icon {
+    color: white;
+    font-size: 20px; /* Tamaño del icono */
+}
+
+ion-button{
+    background-color: #EA9010;
+}

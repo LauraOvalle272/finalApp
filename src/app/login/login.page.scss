@@ -1,0 +1,38 @@
+.login{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh;
+}
+
+ion-header{
+    background-color: #EA9010;
+}
+
+.login-titulo{
+    text-align: center;
+    color: white;
+}
+
+#img{
+    position: absolute;
+    width: 100%;
+}
+
+
+ion-button{
+    background-color: #EA9010;
+}
+
+.error-message{
+    text-align: center;
+}
+
+.register{
+    text-align: center;
+}
+
+.register2{
+    text-align: center;
+    text-decoration: underline;
+}

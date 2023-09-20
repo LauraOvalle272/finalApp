@@ -1,0 +1,43 @@
+<ion-content [fullscreen]="true">
+
+  <img src="../../assets/background2.png" id="img">
+
+  <div class="titulo">Pokemons</div>
+
+  <div class="contenedor">
+    <hr class="linea">
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="center-card">
+    <ion-card *ngFor="let pokemon of detailPokemon">
+      <ion-card-header>
+        <ion-row>
+          <ion-col>
+            <ion-img src="{{pokemon.imageurl}}" class="pokemon" (click)="navigateToPokemonDetail(pokemon.id)"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-card-header>
+      <ion-card-content>
+        <H3 class="title">{{pokemon.name}}</H3>
+        <p class="id">{{pokemon.id}}</p>
+        <br>
+        <ion-row>
+        <div class="texto-container">
+          <p class="category">{{pokemon.category}}</p>
+        </div>                             
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+    
+  </div>
+</ion-content>

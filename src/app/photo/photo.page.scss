@@ -1,0 +1,69 @@
+#img1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    opacity: 0.3;
+}
+
+#img2{  
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    z-index: -1; 
+    opacity: 0.3;
+}
+
+.titulo {
+    position: absolute; 
+    color: #EA9010;
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+ion-tab-bar{
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #EA9010;
+}
+
+.circle {
+    width: 60px; /* Ancho del círculo */
+    height: 60px; /* Altura del círculo */
+    background-color: #EA9010;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: 2px solid white;
+    margin: 0 auto; /* Centra horizontalmente el círculo en la ion-tab-bar */
+    bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+}
+
+.circle ion-icon {
+    color: white;
+    font-size: 20px; /* Tamaño del icono */
+}
+
+.linea {
+    width: 82%; 
+    height: 4px; 
+    background-color:#EA9010; 
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 40px;
+}
+
+ion-card-subtitle{
+    font-size: 18px;
+}

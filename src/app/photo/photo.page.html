@@ -1,0 +1,42 @@
+<ion-content [fullscreen]="true">
+  <ion-img src="../../assets/imagen1.jpg" alt="" id="img1"></ion-img>
+
+  <div class="titulo">Fotos</div>
+
+  <div class="contenedor">
+    <hr class="linea">
+  </div>
+
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  
+  <ion-card *ngFor="let data of photoData">
+    <img [src]="data.imageSource"/>
+    <ion-card-content>
+      <ion-card-title>{{data.title}}</ion-card-title>
+      <ion-card-subtitle>{{data.captureDate}}</ion-card-subtitle>
+      <ion-icon name="trash-outline" class="trash"(click)="deletePhoto(data)"></ion-icon>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-tab-bar  class="fixed-bottom">
+  
+</ion-tab-bar>
+
+<div class="circle">
+  <ion-icon name="camera-outline" (click)="gotoTakePicture()"></ion-icon>
+</div>
+
+<ion-img src="../../assets/imagen2.jpg" alt="" id="img2"></ion-img>
+

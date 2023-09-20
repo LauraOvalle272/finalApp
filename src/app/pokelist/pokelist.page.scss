@@ -1,0 +1,72 @@
+ion-title{
+    margin-left: 50px;
+}
+
+.title{
+    text-align: center;
+    color:black;
+    font-size: 30px;
+}
+
+
+.texto-container {
+    width: 50%;
+    height: 30px;
+    padding: 5px; /* Espaciado interno para el contenedor */
+    background-color: #EA9010; /* Fondo del contenedor */
+    border-radius: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.id{
+    text-align: center;
+
+}
+
+
+.category{
+    color: white;
+
+}
+
+ion-card{
+    border: 2px solid  #EA9010;
+    height: 500px;
+}
+
+#img{
+    position: absolute;
+    width: 100%;
+}
+
+
+.titulo {
+    position: absolute; 
+    color: #EA9010;
+    text-align: center;
+    font-size: 70px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.linea {
+    width: 82%; 
+    height: 4px; 
+    background-color:#EA9010; 
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 40px;
+}
